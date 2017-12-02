@@ -5,7 +5,7 @@ CREATE TABLE burgers
 (
   `id` INT NOT NULL AUTO_INCREMENT,
   `burger_name` VARCHAR(255) NOT NULL,
-  `devoured` TINYINT NOT NULL,
+  `devoured` BOOLEAN DEFAULT FALSE,
   `date` TIMESTAMP(6) NOT NULL,
   PRIMARY KEY (`id`)
 );
